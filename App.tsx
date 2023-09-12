@@ -16,7 +16,7 @@ const imgWidth = 300;
 const imgHeight = 200;
 const style = `.m-signature-pad {box-shadow: none; border: none; } 
               .m-signature-pad--body {border: none;}
-              .m-signature-pad--footer {display: block; margin: 0px;}
+              .m-signature-pad--footer {display: none; margin: 0px;}
               body,html {
               width: ${imgWidth}px; height: ${imgHeight}px;}`;
 
@@ -80,8 +80,6 @@ function App(): JSX.Element {
           onEmpty={handleEmpty}
           onClear={handleClear}
           onGetData={handleData}
-          autoClear={true}
-
           bgWidth={imgWidth}
           bgHeight={imgHeight}
           webStyle={style}
