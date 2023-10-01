@@ -67,8 +67,8 @@ function App(): JSX.Element {
         barStyle={isDarkMode ? 'light-content' : 'dark-content'}
         backgroundColor={backgroundStyle.backgroundColor}
       />
-      <ScrollView
-        contentInsetAdjustmentBehavior="automatic"
+      <View
+        
         style={backgroundStyle}>
 
         <View style={{ width: imgWidth, height: imgHeight }}>
@@ -83,6 +83,7 @@ function App(): JSX.Element {
           bgWidth={imgWidth}
           bgHeight={imgHeight}
           webStyle={style}
+          androidLayerType={'software'}
         />
         </View>
 
@@ -94,7 +95,7 @@ function App(): JSX.Element {
             <Text>No data, draw something</Text>
           )}
         </View>
-      </ScrollView>
+      </View>
     </SafeAreaView>
   );
 }
